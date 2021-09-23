@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+  <meta charset="utf-8" />
+  <title>Simulador de financiamento</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <div class="app">
+    <h1>Simulação de financiamento</h1>
+    <div class="campos">
+      <form id="entradas">
+      <label>Valor: <input id="valor" type="number" value="200000" /></label>
+      <label>Prazo (anos): <input id="prazo" value="20" type="number" /></label>
+      <label
+        >Juros ao ano: <input id="juros" value="0.08" type="number"
+      /></label>
+    </div>
+    <button onclick="calcular">Simular</button>
+  </form>
+    <div>
+      <h2>Resultado</h2>
+      <div class="campos">
+        <label
+          >Prazo (meses): <input readonly id="meses" type="number"
+        /></label>
+        <label
+          >Juros ao mês: <input readonly id="jurosMes" type="number"
+        /></label>
+        <label
+          >Juros acumulados: <input readonly id="jurosAcumulado" type="number"
+        /></label>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Prestação</th>
+            <th>Amortização</th>
+            <th>Juros</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
